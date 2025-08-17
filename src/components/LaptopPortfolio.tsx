@@ -6,11 +6,7 @@ import {
   Environment,
   useGLTF,
   OrbitControls,
-  ContactShadows,
 } from "@react-three/drei";
-import { use } from "vue/types/umd";
-import Name from "./Name";
-import { CameraScrollInertial } from "./CameraScrollInertial";
 import { useRef } from "react";
 import * as THREE from "three";
 

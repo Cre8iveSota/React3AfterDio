@@ -2,14 +2,10 @@ import "./style.css";
 import ReactDOM from "react-dom/client";
 import { Canvas } from "@react-three/fiber";
 import * as THREE from "three";
-import Experience from "./components/Experience.tsx";
-import ExperienceTextWithGeometory from "./components/ExperienceTextWithGeometory.tsx";
 import LaptopPortfolio from "./components/LaptopPortfolio.tsx";
-import Garaxy from "./components/Garaxy.tsx";
 import RotatingBoxApp from "./components/RotatingBox.tsx";
 import PlanetsEffect from "./components/PlanetsEffect.tsx";
 import { useState } from "react";
-import { Perf } from "r3f-perf";
 import ExpandingSphere from "./components/ExpandingSphere.tsx";
 
 const root = ReactDOM.createRoot(document.querySelector("#root")!);

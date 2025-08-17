@@ -1,4 +1,3 @@
-import { Edges } from "@react-three/drei";
 import {
   EffectComposer,
   SelectiveBloom,
@@ -8,7 +7,6 @@ import {
 import { BlendFunction } from "postprocessing";
 import { useRef } from "react";
 import * as THREE from "three";
-import RotatingBoxApp from "./RotatingBox";
 export default function Garaxy() {
   const boxRef = useRef<THREE.Mesh>(null!);
 

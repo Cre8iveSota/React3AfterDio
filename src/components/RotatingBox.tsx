@@ -1,5 +1,5 @@
-import { useRef, useEffect, useState, useCallback } from "react";
-import { Canvas, useFrame, useThree } from "@react-three/fiber";
+import { useRef, useEffect, useCallback } from "react";
+import { useFrame, useThree } from "@react-three/fiber";
 import * as THREE from "three";
 import {
   EffectComposer,
