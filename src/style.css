@@ -12,6 +12,7 @@ body,
 
 .r3f {
   touch-action: none;
+  overscroll-behavior: contain; /* 画面端でのバウンス・スクロール連鎖を抑止 */
 }
 
 .htmlScreenPC iframe {
