@@ -1,11 +1,5 @@
 import { useThree, useFrame } from "@react-three/fiber";
-import {
-  BakeShadows,
-  Environment,
-  OrbitControls,
-  Sky,
-  useHelper,
-} from "@react-three/drei";
+import { Environment, OrbitControls, useHelper } from "@react-three/drei";
 import { useEffect, useRef } from "react";
 import { Perf } from "r3f-perf";
 import { DirectionalLight, Mesh } from "three";
@@ -33,7 +27,7 @@ export default function Experience() {
     scene.environmentIntensity = envMapintensity;
   }, [envMapintensity]);
 
-  useFrame((state, delta) => {
+  useFrame((_state, delta) => {
     cube.current!.rotation.y += delta * 0.2;
   });
 

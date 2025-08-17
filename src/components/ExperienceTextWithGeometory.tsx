@@ -6,7 +6,6 @@ import {
   Center,
   useMatcapTexture,
 } from "@react-three/drei";
-import CustomObject from "./CustomObject.tsx";
 import * as THREE from "three";
 
 export default function ExperienceTextWithGeometory() {
@@ -15,7 +14,7 @@ export default function ExperienceTextWithGeometory() {
   const cubeRef = useRef<THREE.Mesh>(null);
   const groupRef = useRef<THREE.Group>(null);
 
-  useFrame((state, delta) => {
+  useFrame((_state, delta) => {
     if (cubeRef.current) {
       cubeRef.current.rotation.y += delta;
     }
